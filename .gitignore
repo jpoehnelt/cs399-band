@@ -1,0 +1,5 @@
+*.pyc
+build/
+dist/
+cs399.egg-info
+.idea*
