@@ -1,2 +1,2 @@
-recursive-include cs399 *
+recursive-include app *
 include *

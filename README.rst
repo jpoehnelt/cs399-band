@@ -13,7 +13,7 @@ Install the module with: ``pip install cs399``
 
 .. code:: python
 
-    from cs399 import run
+    from app import run
     run()
 
 Documentation
