@@ -2,9 +2,9 @@ from setuptools import setup, find_packages
 
 
 setup(
-    name='cs399',
+    name='cs399-band',
     version='0.1.0',
-    description='Web Programming Project',
+    description='CS399 Band',
     long_description=open('README.rst').read(),
     keywords=[
         'class',

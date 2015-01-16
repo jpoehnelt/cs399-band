@@ -3,15 +3,9 @@ python:
   - "2.7"
 
 install:
-  # Install `cs399`
-  - python setup.py develop
-
-  # Install dev requirements
-  - pip install -r requirements-dev.txt
-
+  - pip install -r requirements.txt
+  - pip install python-coveralls
 script:
-  # Run our tests
-  - ./test.sh
-
-notifications:
-  email: false
+  coverage run --source=app setup.py test
+after_success:
+  coveralls
