@@ -7,6 +7,6 @@ install:
   - pip install coveralls
 script:
   - python manage.py test app
-  - coverage run manage.py test app
+  - coverage run --omit=*/migrations/* manage.py test app
 after_success:
   coveralls
