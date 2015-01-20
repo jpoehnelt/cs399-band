@@ -1,0 +1,45 @@
+
+
+body {
+    margin-top: 50px; 
+}
+
+.topimage {
+    display: block;
+    width: 100%;
+    text-align: center;
+
+    background-size: cover;
+  
+}
+
+.topofpage {
+    padding: 120px 0;
+}
+
+.topofpage h1 {
+    font-size: 130px;
+
+}
+
+.topofpage h2 {
+    font-size: 77px;
+ 
+}
+
+.divider {
+    margin: 50px 0;
+}
+
+.section{
+    overflow: hidden;
+}
+
+.section-heading {
+    font-size: 50px;
+}
+
+footer {
+    margin: 50px 0;
+}
+
