@@ -9,8 +9,16 @@
 
         <p class="lead">Eh this could just be normal text and have a heading for the place and
             smaller heading for the date and so on.</p>
-    </div>
+
+        <div>
+            {% for event in events %}
+                <h3>{{ event.city }}, {{ event.state }} <span
+                        class="small">{{ event.date | date:"F d, Y" }}</span></h3>
+                <p>{{ event.description }}</p>
+            {% endfor %}
+            </ul>
+        </div>
 
 
-    <!-- container end -->
+        <!-- container end -->
 {% endblock %}
