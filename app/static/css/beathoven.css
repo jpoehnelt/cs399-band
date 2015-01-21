@@ -4,12 +4,23 @@ body {
     background-color: #f5f5f5;
 }
 
+.navbar {
+    background: rgb(0, 0, 0); /* Fall-back for browsers that don't
+                                    support rgba */
+    background: rgba(0, 0, 0, .8);
+}
+
+
 .topimage {
     display: block;
     width: 100%;
     text-align: center;
     background-size: cover;
-    background-image: url(http://www.minimit.com/images/picjumbo.com_DSC_3274.jpg);
+    background: url(http://i404.photobucket.com/albums/pp121/dherbsta/Beathovenbackground.jpg) no-repeat center center scroll;
+     -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
 }
 
 .topofpage {
@@ -19,11 +30,13 @@ body {
 
 .topofpage h1 {
     font-size: 130px;
+    color: rgb(0, 0, 0);
 
 }
 
 .topofpage h2 {
     font-size: 77px;
+     color: rgb(0, 0, 0);
 }
 
 .divider {
