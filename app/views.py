@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from app.models import members as band_members, events
+from app.models import members as band_members, events, discography as albums
 
 
 def home(request):
@@ -11,7 +11,7 @@ def members(request):
 
 
 def discography(request):
-    return render(request, 'discography.html')
+    return render(request, 'discography.html', {'discography': albums})
 
 
 def tour(request):
