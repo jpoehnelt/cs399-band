@@ -41,3 +41,7 @@ footer #social-icons a {
     margin: 0 2%;
     color: #555555;
 }
+
+.item img {
+    margin: 0 auto;
+}
