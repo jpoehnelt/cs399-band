@@ -1,7 +1,11 @@
-
-
-body {
+body{
     margin-top: 50px; 
+    background-image: url('../static/images/bg.png');
+    background-color: #FFF;
+    background-repeat: repeat;
+}
+.container{
+    background-color: #FFF;
 }
 
 .topimage {
