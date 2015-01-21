@@ -121,41 +121,16 @@
             <!-- Third section-->
             <div class="section" id="event">
 
-                <h2 class="section-heading">Events!</h2>
+                <h2 class="section-heading">Upcoming Tour Events</h2>
 
-                <p class="lead">
-                    <table class="table table-hover">
-                        <thead>
-                            <tr>
-                                <th>What?</th>
-                                <th>When?</th>
-                                <th>Who?</th>
-                                <th>Where?</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Super Sicknasty Music Festival</td>
-                                <td>Feb 3, 2015</td>
-                                <td>All the homies!</td>
-                                <td>Los Angeles</td>
-                            </tr>
-                            <tr>
-                                <td>Lucy's Birthday Party</td>
-                                <td>March 24, 2015</td>
-                                <td>Only her friends</td>
-                                <td>813 W University Ave.</td>
-                            </tr>
-                            <tr>
-                                <td>The President's Luncheon</td>
-                                <td>April 1, 2015</td>
-                                <td>Only ones who love the Cocoa</td>
-                                <td>The White House</td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                </p>
+                <div>
+            {% for event in events|slice:":2" %}
+                <h3>{{ event.city }}, {{ event.state }} <span
+                        class="small">{{ event.date | date:"F d, Y" }}</span></h3>
+                <p>{{ event.description }}</p>
+            {% endfor %}
+                <h3><a class="small" href="{% url 'tour' %}">All Tour Events</a></h3>
+        </div>
             </div>
 
             <hr class="divider">
