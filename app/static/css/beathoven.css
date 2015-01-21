@@ -9,10 +9,12 @@ body {
     width: 100%;
     text-align: center;
     background-size: cover;
+    background-image: url(http://www.minimit.com/images/picjumbo.com_DSC_3274.jpg);
 }
 
 .topofpage {
     padding: 120px 0;
+    color: #F5F5F5;
 }
 
 .topofpage h1 {
