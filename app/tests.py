@@ -2,7 +2,7 @@ from django.test import Client, TestCase
 from django.test.client import RequestFactory
 from django.core.urlresolvers import reverse
 from django.contrib.staticfiles import finders
-from app.settings import STATICFILES_DIRS
+from app.settings import STATICFILES_DIRS, BASE_DIR
 from app.views import home, discography, tour, members
 
 
@@ -77,5 +77,10 @@ class TestViews(TestCase):
         for d in STATICFILES_DIRS:
             self.assertIn(d, searched_locations)
 
-
+    def test_base_navbar_urls(self):
+        response = self.client.get('/')
+        self.assertContains(response, reverse('members'))
+        self.assertContains(response, reverse('discography'))
+        self.assertContains(response, reverse('home'))
+        self.assertContains(response, reverse('tour'))
 

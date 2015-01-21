@@ -9,7 +9,7 @@
     <!-- Bootstrap -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
      <!-- beathoven styling CSS -->
-    <link href="../../static/css/beathoven.css" rel="stylesheet">
+    <link href="/static/css/beathoven.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -39,13 +39,13 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li {% block nav-memb %} {% endblock %}>
-                        <a href="members.html">Bio</a>
+                        <a href="{% url 'members' %}">Bio</a>
                     </li>
                     <li {% block nav-disc %} {% endblock %}>
-                        <a href="discography.html">Discography</a>
+                        <a href="{% url 'discography' %}">Discography</a>
                     </li>
                     <li {% block nav-tour %} {% endblock %}>
-                        <a href="tour.html">Event</a>
+                        <a href="{% url 'tour' %}">Event</a>
                     </li>
                 </ul>
             </div>
