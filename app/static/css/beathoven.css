@@ -69,3 +69,13 @@ footer #social-icons a {
 .album .track i {
     margin-left: 5px;
 }
+
+#event #map {
+    margin-top:20px;
+    height:150px;
+    width:100%;
+    border:1px solid #777777;
+}
+#map .leaflet-control-container {
+    display:none;
+}
