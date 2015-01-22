@@ -67,36 +67,62 @@
                     it is weird but that thing below is a carousal. We can insert our album covers
                     as images and they will just slide</p>
                 <!-- carousel begin -->
-                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="width: 60%; height: 300px; margin-left: auto; margin-right: auto; background-color: black">
                     <!-- Indicators -->
                     <ol class="carousel-indicators">
                         <li data-target="#carousel-example-generic" data-slide-to="0"
                             class="active"></li>
                         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
                         <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
                     </ol>
 
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                            <img src="http://placehold.it/700x300" class="carousel-pic" alt="...">
+                            <a href="{% url 'discography' %}#78a54">
+                            <img src="/static/albums/78a54/cover.jpg" class="carousel-pic" alt="...">
+                            </a>
 
                             <div class="carousel-caption">
-                                We really Beep and Boop!
+                                <h3>Burning Highway</h3>
                             </div>
                         </div>
                         <div class="item">
-                            <img src="http://placehold.it/700x300" class="carousel-pic" alt="...">
+                            <a href="{% url 'discography' %}#0e3e8">
+                            <img src="/static/albums/0e3e8/cover.jpg" class="carousel-pic" alt="...">
+                            </a>
 
                             <div class="carousel-caption">
-                                We do we do!!
+                                <h3>Karma Can't Hide Forever</h3>
                             </div>
                         </div>
                         <div class="item">
-                            <img src="http://placehold.it/700x300" class="carousel-pic" alt="...">
+                            <a href="{% url 'discography' %}#0169a">
+                            <img src="/static/albums/0169a/cover.jpg" class="carousel-pic" alt="...">
+                            </a>
 
                             <div class="carousel-caption">
-                                Last Slide Bruh!!
+                                <h3>Words In An Elevator</h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href="{% url 'discography' %}#b2af6">
+                            <img src="/static/albums/b2af6/cover.jpg" class="carousel-pic" alt="...">
+                            </a>
+
+                            <div class="carousel-caption">
+                                <h3>Abandoned Messages</h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href="{% url 'discography' %}#819f5">
+                            <img src="/static/albums/819f5/cover.jpg" class="carousel-pic" alt="...">
+                            </a>
+
+                            <div class="carousel-caption">
+                                <h3>Sick Joy</h3>
                             </div>
                         </div>
                     </div>
@@ -133,9 +159,6 @@
                 <h3><a class="small" href="{% url 'tour' %}">All Tour Events</a></h3>
         </div>
             </div>
-
-            <hr class="divider">
-
         </div>
 
 
