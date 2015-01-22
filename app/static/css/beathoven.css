@@ -5,11 +5,37 @@ body {
 }
 
 .navbar {
-    background: rgb(0, 0, 0); /* Fall-back for browsers that don't
-                                    support rgba */
-    background: rgba(0, 0, 0, .8);
+    background: rgb(0, 0, 0);
+    /* Fall-back for browsers that don't
+                                       support rgba */
+    background: rgba(0, 0, 0, .9);
 }
 
+.section {
+    padding: 50px 0;
+    min-height: 450px;
+}
+
+.section-black, footer {
+    background-color: #111111;
+    color: #ffffff;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.section-striped {
+    background-color: #111111;
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, .02) 50%, transparent 50%),
+    linear-gradient(0deg, rgba(255, 255, 255, .02) 50%, transparent 50%),
+    linear-gradient(90deg, transparent 50%, rgba(255, 255, 255, .01) 50%),
+    linear-gradient(90deg, transparent 50%, rgba(255, 255, 255, .03) 50%);
+    background-size: 13px, 29px, 37px, 53px;
+    color: #ffffff;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
 
 .topimage {
     display: block;
@@ -17,9 +43,9 @@ body {
     text-align: center;
     background-size: cover;
     background: url(http://i404.photobucket.com/albums/pp121/dherbsta/Beathovenbackground.jpg) no-repeat center center scroll;
-     -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 
 }
 
@@ -36,7 +62,7 @@ body {
 
 .topofpage h2 {
     font-size: 77px;
-     color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
 }
 
 .divider {
@@ -45,7 +71,8 @@ body {
 }
 
 footer {
-    margin: 50px 0;
+    margin-top: 50px;
+    padding: 50px 0;
 }
 
 footer #social-icons {
@@ -60,22 +87,31 @@ footer #social-icons a {
 .item img {
     margin: 0 auto;
 }
+
 #albums {
     margin-bottom: 30px;
 }
+
 .album {
     margin-top: 30px;
 }
+
 .album .track i {
     margin-left: 5px;
 }
 
 #event #map {
-    margin-top:20px;
-    height:150px;
-    width:100%;
-    border:1px solid #777777;
+    margin-top: 20px;
+    height: 150px;
+    width: 100%;
+    border: 1px solid #777777;
 }
+
 #map .leaflet-control-container {
-    display:none;
+    display: none;
+}
+
+.well {
+    background-color: #dddddd;
+    border-color: #bbbbbb;
 }
