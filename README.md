@@ -3,10 +3,10 @@
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/justinwp/cs399-band?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 # Beathoven
 
-[Demo](https://beathoven.herokuapp.com) (may not be running)
+[Demo](http://beathoven.herokuapp.com) (may not be running)
 
 ## About
-A simple warmup project for a web programming class. Project members [here](https://beathoven.herokuapp.com/members).
+A simple warmup project for a web programming class. Project members [here](http://beathoven.herokuapp.com/members).
 
 ## Content Sources
 
