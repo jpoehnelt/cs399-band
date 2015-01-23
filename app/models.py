@@ -12,7 +12,7 @@ def generate_events(num):
     tour_events = []
 
     for i in range(num):
-        events.append({
+        tour_events.append({
             'date': fake.dateTimeBetween('now', '+1y'),
             'city': fake.city(),
             'state': fake.stateAbbr(),
