@@ -2,177 +2,171 @@
 
 {% block title %} Home{% endblock %}
 {% block content %}
-  
 
-        <!-- Top of the page -->
-        <div class="topimage">
-            <div class="topofpage">
-                <h1>Beathoven</h1>
 
-                <h2>It's like a mix between classical and hiphop</h2>
-            </div>
+    <!-- Top of the page -->
+    <div class="topimage section-black">
+        <div class="topofpage">
+            <h1>Beathoven</h1>
+
+            <h2>It's like a mix between classical and hiphop</h2>
         </div>
-          <div class="container" id="home">
+    </div>
+    <!-- First section-->
+    <div class="section" id="Bio">
+        <div class="container">
 
-        <!--Other Section -->
-        <hr class="divider">
+            <h1 class="section-heading">Band Members</h1>
 
-        <!-- First section-->
-        <div class="section" id="Bio">
+            <p class="lead">Eaque iste impedit culpa aspernatur odio et autem. Est maiores aut
+                tenetur eius quidem. Est velit sint eveniet ipsa rerum qui commodi. At est voluptas
+                magni et vero fuga eum. Eaque iste impedit culpa aspernatur odio et autem. Est
+                maiores aut tenetur eius quidem. Est velit sint eveniet ipsa rerum qui commodi. At
+                est voluptas magni et vero fuga eum. Eaque iste impedit culpa aspernatur odio et
+                autem. Est maiores aut tenetur eius quidem. Est velit sint eveniet ipsa rerum qui
+                commodi. At est voluptas magni et vero fuga eum.</p>
 
-            <h2 class="section-heading">Bio
+            <p class="lead">Eaque iste impedit culpa aspernatur odio et autem. Est maiores aut
+                tenetur eius quidem. Est velit sint eveniet ipsa rerum qui commodi. At est voluptas
+                magni et vero fuga eum. Eaque iste impedit culpa aspernatur odio et autem. Est
+                maiores aut tenetur eius quidem. Est velit sint eveniet ipsa rerum qui commodi. At
+                est voluptas magni et vero fuga eum. Eaque iste impedit culpa aspernatur odio et
+                autem. Est maiores aut tenetur eius quidem. Est velit sint eveniet ipsa rerum qui
+                commodi. At est voluptas magni et vero fuga eum.</p>
 
-            </h2>
 
-            <p class="lead">This is where we shall put the bio of our wonderful band. I had the
-                bright idea to use a bootstrap Collapse feature and instead of buttons, it would be
-                our lovely faces as the button! So when you click on your face, it will have a bio
-                of you.</p>
-
-
-            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample"
-               aria-expanded="false" aria-controls="collapseExample">
-                band member 1
+            <a class="btn btn-primary" href="/members">
+                Read More
             </a>
-            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample2"
-               aria-expanded="false" aria-controls="collapseExample2">
-                band member 2
-            </a>
 
-            <div class="collapse" id="collapseExample">
-                <div class="well">
-                    Hi I am band member 1
-                </div>
-            </div>
-
-            <div class="collapse" id="collapseExample2">
-                <div class="well">
-                    Hey yo I am band member 2
-                </div>
-
-                <!-- collapse end -->
-            </div>
-
-            <hr class="divider">
-
-            <!-- Second section-->
-            <div class="section" id="Discography">
-
-                                <h2 class="section-heading">Discography</h2>
-                <div class="row">
-                    <div class="col-lg-5">
-                        <!-- carousel begin -->
-                        <div id="carousel" class="carousel slide" data-ride="carousel" style="width: 300px; height: 300px; margin-left: auto; margin-right: auto; background-color: black">
-                            <!-- Indicators -->
-                            <ol class="carousel-indicators">
-                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-                            </ol>
-                                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <a href="{% url 'discography' %}#78a54">
-                            <img src="/static/albums/78a54/cover.jpg" class="carousel-pic" alt="...">
-                            </a>
-
-                            <div class="carousel-caption">
-                                <h3>Burning Highway</h3>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <a href="{% url 'discography' %}#0e3e8">
-                            <img src="/static/albums/0e3e8/cover.jpg" class="carousel-pic" alt="...">
-                            </a>
-
-                            <div class="carousel-caption">
-                                <h3>Karma Can't Hide Forever</h3>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <a href="{% url 'discography' %}#0169a">
-                            <img src="/static/albums/0169a/cover.jpg" class="carousel-pic" alt="...">
-
-
-                            <div class="carousel-caption">
-                                <h3>Words In An Elevator</h3>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <a href="{% url 'discography' %}#b2af6">
-                            <img src="/static/albums/b2af6/cover.jpg" class="carousel-pic" alt="...">
-
-                            <div class="carousel-caption">
-                                <h3>Abandoned Messages</h3>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <a href="{% url 'discography' %}#819f5">
-                            <img src="/static/albums/819f5/cover.jpg" class="carousel-pic" alt="...">
-                            </a>
-
-                            <div class="carousel-caption">
-                                <h3>Sick Joy</h3>
-                            </div>
-                        </div>
-                    </div>
-                            <!-- End Wrapper for Slides -->
-                            <!-- Controls -->
-                            <a class="left carousel-control" href="#carousel" role="button"
-                               data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="right carousel-control" href="#carousel"
-                               role="button" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-                        <!-- carousel end -->
-                    </div>
-                    <div class="col-lg-7">
-                        <h3>Header</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <hr class="divider">
-
-            <!-- Third section-->
-            <div class="section" id="event">
-
-                <h2 class="section-heading">Upcoming Tour Events</h2>
-
-                <div>
-            {% for event in events|slice:":2" %}
-                <h3>{{ event.city }}, {{ event.state }} <span
-                        class="small">{{ event.date | date:"F d, Y" }}</span></h3>
-                <p>{{ event.description }}</p>
-            {% endfor %}
-                <h3><a class="small" href="{% url 'tour' %}">All Tour Events</a></h3>
+            <!-- collapse end -->
         </div>
+    </div>
+    </div>
+    <!-- Second section-->
+    <div class="section section-striped" id="Discography">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5">
+                    <!-- carousel begin -->
+                    <div id="carousel" class="carousel slide" data-ride="carousel"
+                         style="width: 300px; height: 300px; margin-left: auto; margin-right: auto; background-color: black">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0"
+                                class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <a href="{% url 'discography' %}#78a54">
+                                    <img src="/static/albums/78a54/cover.jpg" class="carousel-pic"
+                                         alt="...">
+                                </a>
+
+                                <div class="carousel-caption">
+                                    <h3>Burning Highway</h3>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <a href="{% url 'discography' %}#0e3e8">
+                                    <img src="/static/albums/0e3e8/cover.jpg" class="carousel-pic"
+                                         alt="...">
+                                </a>
+
+                                <div class="carousel-caption">
+                                    <h3>Karma Can't Hide Forever</h3>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <a href="{% url 'discography' %}#0169a">
+                                    <img src="/static/albums/0169a/cover.jpg" class="carousel-pic"
+                                         alt="...">
+
+
+                                    <div class="carousel-caption">
+                                        <h3>Words In An Elevator</h3>
+                                    </div>
+                            </div>
+                            <div class="item">
+                                <a href="{% url 'discography' %}#b2af6">
+                                    <img src="/static/albums/b2af6/cover.jpg" class="carousel-pic"
+                                         alt="...">
+
+                                    <div class="carousel-caption">
+                                        <h3>Abandoned Messages</h3>
+                                    </div>
+                            </div>
+                            <div class="item">
+                                <a href="{% url 'discography' %}#819f5">
+                                    <img src="/static/albums/819f5/cover.jpg" class="carousel-pic"
+                                         alt="...">
+                                </a>
+
+                                <div class="carousel-caption">
+                                    <h3>Sick Joy</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Wrapper for Slides -->
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel" role="button"
+                           data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"
+                                  aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel"
+                           role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"
+                                  aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <!-- carousel end -->
+                </div>
+                <div class="col-sm-7">
+                    <h1 class="section-heading">Discography</h1>
+
+                    <p class="lead">Eaque iste impedit culpa aspernatur odio et autem. Est maiores
+                        aut tenetur
+                        eius quidem. Est velit sint eveniet ipsa rerum qui commodi. At est voluptas
+                        magni et vero fuga eum. Eaque iste impedit culpa aspernatur odio et autem.
+                        Est maiores aut tenetur eius quidem. Est velit sint eveniet ipsa rerum qui
+                        commodi. At est voluptas magni et vero fuga eum. Eaque iste impedit culpa
+                        aspernatur odio et autem. Est maiores aut tenetur eius quidem. Est velit
+                        sint eveniet ipsa rerum qui commodi. At est voluptas magni et vero fuga
+                        eum.</p>
+                    <a class="btn btn-primary pull-right" href="/albums">
+                        See All Albums
+                    </a>
+                </div>
             </div>
         </div>
+    </div>
 
+    <!-- Third section-->
+    <div class="section" id="event">
+        <div class="container">
+            <h1 class="section-heading">Upcoming Tour Events</h1>
+
+            <div>
+                {% for event in events|slice:":3" %}
+                    <h2>{{ event.city }}, {{ event.state }}
+                        <small>
+                            {{ event.date | date:"F d, Y" }}</small>
+                    </h2>
+                    <p class="lead">{{ event.description }}</p>
+                {% endfor %}
+                <a class="btn btn-primary" href="{% url 'tour' %}">More Tour Events</a>
+            </div>
+        </div>
 
     </div>
+
     <!-- /.container -->
 {% endblock %}

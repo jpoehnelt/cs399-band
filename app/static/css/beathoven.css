@@ -57,12 +57,15 @@ body {
 .topofpage h1 {
     font-size: 130px;
     color: rgb(0, 0, 0);
+    color: rgba(0, 0, 0,0.8);
 
 }
 
 .topofpage h2 {
-    font-size: 77px;
+    font-size: 60px;
     color: rgb(0, 0, 0);
+        color: rgba(0, 0, 0,0.8);
+
 }
 
 .divider {
