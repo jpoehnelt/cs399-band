@@ -6,43 +6,48 @@
 {% block content %}
     <div class="container" id="discography">
 
-    <h2>Discography</h2>
+        <h2>Discography</h2>
 
-    <p class="lead">It is funny because I sort of had an idea of what a discography but I
-        wasn't sure so I searched google lol. But yeah this where it will go. <a
-                href="http://www.fakemusicgenerator.com">Fake Music Generator</a></p>
+        <p class="lead">It is funny because I sort of had an idea of what a discography but I
+            wasn't sure so I searched google lol. But yeah this where it will go. <a
+                    href="http://www.fakemusicgenerator.com">Fake Music Generator</a></p>
 
-    <div id="albums">
-        {% for album in discography %}
-            <div class="row album">
-                <div class="col-sm-5">
-                    <img src="/static/albums/{{ album.id }}/cover.jpg" class="img-responsive"/>
+        <div id="albums">
+            {% for album in discography %}
+                <a name="{{ album.id }}" style="position: relative; top: -37px;"></a>
+                <div class="row album">
+                    <div class="col-sm-5">
+                        <img src="/static/albums/{{ album.id }}/cover.jpg" class="img-responsive"/>
+                    </div>
+                    <div class="col-sm-7">
+                        <h2>{{ album.name }}
+                            <small>{{ album.year }}</small>
+                        </h2>
+                        <ol>
+                            {% for track in album.tracks %}
+                                <li class="track">
+                                    <h4>{{ track.song }}
+                                        <small>{{ track.time }}</small>
+                                        <a target="_blank"
+                                           href="/static/albums/{{ album.id }}/{{ track.trk }}.mp3"><i
+                                                class="fa fa-volume-up"></i></a>
+                                    </h4>
+
+                                </li>
+                            {% endfor %}
+                        </ol>
+                    </div>
                 </div>
-                <div class="col-sm-7">
-                    <h2>{{ album.name }}
-                        <small>{{ album.year }}</small>
-                    </h2>
-                    <ol>
-                        {% for track in album.tracks %}
-                            <li class="track">
-                                <h4>{{ track.song }}
-                                    <small>{{ track.time }}</small>
-                                    <a target="_blank"
-                                       href="/static/albums/{{ album.id }}/{{ track.trk }}.mp3"><i
-                                            class="fa fa-volume-up"></i></a>
-                                </h4>
+            {% endfor %}
+        </div>
 
-                            </li>
-                        {% endfor %}
-                    </ol>
-                </div>
-            </div>
-        {% endfor %}
+        <blockquote class="text-muted small">The Fake Music Generator provides free computer
+            generated
+            albums
+            that you can use in any way you want. We give you an entire album: cover art, artist,
+            album
+            title, track titles, and even computer generated music. <a
+                    href="http://www.fakemusicgenerator.com">Fake Music Generator</a></blockquote>
     </div>
 
-    <blockquote class="text-muted small">The Fake Music Generator provides free computer generated albums
-        that you can use in any way you want. We give you an entire album: cover art, artist, album
-        title, track titles, and even computer generated music. <a
-                href="http://www.fakemusicgenerator.com">Fake Music Generator</a></blockquote>
 {% endblock %}
-</div>

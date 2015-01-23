@@ -1,4 +1,4 @@
 django==1.7.2
 fake-factory==0.2
 requests==2.5.1
-BeautifulSoup
+beautifulsoup4>=4

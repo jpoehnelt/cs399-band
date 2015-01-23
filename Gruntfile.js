@@ -23,11 +23,11 @@ module.exports = function (grunt) {
         },
         watch: {
             js: {
-                files: ['app/static/js/*.js', 'Gruntfile.js'],
+                files: ['app/static/js/app.js', 'Gruntfile.js'],
                 tasks: ['uglify']
             },
             css: {
-                files: ['app/static/css/*.css', 'Gruntfile.js'],
+                files: ['app/static/css/beathoven.css', 'Gruntfile.js'],
                 tasks: ['cssmin']
             }
         },
