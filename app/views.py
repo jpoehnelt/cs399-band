@@ -1,13 +1,13 @@
 from django.shortcuts import render
-from app.models import members as band_members, events, discography as albums
+from app.models import events, discography as albums
 
 
 def home(request):
-    return render(request, 'home.html', {'members': band_members, 'events': events})
+    return render(request, 'home.html', {'events': events, 'discography': albums})
 
 
 def members(request):
-    return render(request, 'members.html', {'members': band_members})
+    return render(request, 'members.html')
 
 
 def discography(request):
